@@ -45,13 +45,10 @@ font-family: 'UD Shin Go NT Regular JIS2004';
       flex-direction: column;
       justify-content: flex-start;
       padding-top:30px;
+      margin-right:10px;
     }
 
-    .sidebar ul {
-      list-style: none;
-      padding: 0;
-    }
-    .sidebar li {
+    .sidebar div {
      padding-top:23px;
      padding-bottom:23px;
      padding-left:75px;
@@ -62,11 +59,11 @@ font-family: 'UD Shin Go NT Regular JIS2004';
       font-size: 20px;
       color: #ffc176;
     }
-    .sidebar li:hover {
+    .sidebar div:hover {
       background: #ffffff33;
       color: #fde3c0;
     }
-    .sidebar li.selected {
+    .sidebar div.selected {
       background: #ffffff33;
       color: #fde3c0;
     }
@@ -79,7 +76,7 @@ font-family: 'UD Shin Go NT Regular JIS2004';
       font-size: 23px;
       font-weight:normal;
       margin-bottom: 20px;
-      margin-top:-10px;
+      margin-top:-5px;
     }
 
   </style>
@@ -88,17 +85,16 @@ font-family: 'UD Shin Go NT Regular JIS2004';
   <div id="maincontent" >
 
   <div class="sidebar">
-    <ul>
-      <li onclick="window.location.reload();">&nbsp;&nbsp;&nbsp;Search/Browse</li>
-      <li>Featured</li>
-      <li>Recent Releases</li>
-      <li>Current Offers</li>
-      <li>Charts</li>
-      <li>Coming Soon</li>
-      <li>Nintendo Switch Online</li>
-      <li>Enter Code</li>
-    </ul>
+      <div onclick="window.location.reload();">&nbsp;&nbsp;&nbsp;Search/Browse</div>
+      <div class="selected">Featured</div>
+      <div>Recent Releases</div>
+      <div>Current Offers</div>
+      <div>Charts</div>
+      <div>Coming Soon</div>
+      <div>Nintendo Switch Online</div>
+      <div>Enter Code</div>
   </div>
+  
   <div class="content">
     <h3>Featured</h3>
 
