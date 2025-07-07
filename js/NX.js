@@ -1,3 +1,4 @@
+// sidenav
 var sidenav = document.getelementById("sidebar");
 sidenav.focus();
 
@@ -7,6 +8,7 @@ function hovernav(navoption) {
 }
 
 function leavenav(navoption) {
-    navoption.style.backgroundColor = "";
-    navoption.style.color = "";
+    navoption.style.backgroundColor = "inherit";
+    navoption.style.color = "inherit";
 }
+// sidenav
