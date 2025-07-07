@@ -5,13 +5,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ShopN - ashigaru</title>
   <style>
-    * {
-      margin:0;
-      padding:0;
-      box-sizing:border-box;
-      font-family: 'A-OTF Shin Go Pro', sans-serif;
-    }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* thank you https://www.reddit.com/r/NintendoSwitch/comments/5xujsw/ive_found_the_actual_font_for_the_switchs_ui/ */
+    /*font-family: 'A-OTF UD Shin Go NT Regular';*/
+font-family: 'UD Shin Go NT Regular JIS2004';
+}
+/* font from: https://en.morisawa.co.jp/fonts/specimen/2279 */
+
+@font-face {
+font-family: 'UD Shin Go NT Regular JIS2004';
+  src: url('https://wf.typesquare.com/3/tsad/dist/ja/ts?condition=4d1efa0941ffe65c7c17d219b21585a3&onetime_condition=&eid=qP9CSvpiTpM%3D&bw[name]=Firefox&bw[ftf]=0&bw[os]=Windows&location=en.morisawa.co.jp%2F&fonts[id]=1262&fonts[str]=MDIzNE5TZGVoaW5vcHQ%3D') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
     body {
+    font-family: 'UD Shin Go NT Regular JIS2004';
       background: #f4f4f4; 
       display: flex;
       height: 100vh;
@@ -27,7 +39,7 @@
     }
     .sidebar {
       background: #ff8000;
-      width: 430px;
+      width: 450px;
       box-sizing: border-box;
       display: flex;
       flex-direction: column;
@@ -40,20 +52,23 @@
       padding: 0;
     }
     .sidebar li {
-      padding: 18px 75px;
+     padding-top:23px;
+     padding-bottom:23px;
+     padding-left:75px;
+     padding-right:75px;
       width:100%;
       margin-left:0px;
       cursor: pointer;
       font-size: 20px;
-      color: rgba(255, 253, 250, 0.822);
+      color: #ffad4b;
     }
     .sidebar li:hover {
-      background: rgba(255, 255, 255, 0.3);
-      color: white;
+      background: #ffffff4d;
+      color: #fde3c0;
     }
     .sidebar li.selected {
-      background: rgba(255, 255, 255, 0.3);
-      color: white;
+      background: #ffffff4d;
+      color: #fde3c0;
     }
     .content {
       width: 80%;
