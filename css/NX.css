@@ -37,6 +37,8 @@ body {
 
     #sidebar {
       background: #e70012;
+      color:#fedcce;
+      
       width: 480px;
       display: block;
       padding-top:38px;
@@ -54,15 +56,13 @@ body {
       margin-left:0px;
       cursor: pointer;
       font-size: 20px;
-      color: #fedcce;
+      color:inherit;
     }
-    #sidebar a:hover {
-      background: #ffffff41;
-      color: #ffe4e3;
-    }
+
     .selectednav {
-      background: #ffffff41;
-      color: #ffe4e3;
+      background: #ffffff41 !important;
+      color: #ffe4e3  !important;
+     /* once this is edited, do the same in  NX.js when hovering over a nav element */
     }
    
     /* main content/titles/everything idk */
@@ -82,51 +82,6 @@ body {
     }
 
     /* main content/titles/everything idk */
-
-
-
-
-
-    /* rip orange eshop 2011 - 2025 */
-
-    /*
-     #sidebar {
-      background: #ff8000;
-      width: 480px;
-      display: block;
-      padding-top:38px;
-      margin-right:20px;
-    }
-
-    #sidebar div {
-      display:block;
-     padding-top:25px;
-     padding-bottom:25px;
-     padding-left:77px;
-     padding-right:77px;
-      width:100%;
-      margin-left:0px;
-      cursor: pointer;
-      font-size: 20px;
-      color: #ffc176;
-    }
-    #sidebar div:hover {
-      background: #ffffff33;
-      color: #fde3c0;
-    }
-    .selectednav {
-      background: #ffffff33;
-      color: #fde3c0;
-    }
-
-    */
-
-    /* rip orange eshop 2011 (or 2005 if you count the beta wii shop) - 2025 */
-
-
-
-
-
 
 
 

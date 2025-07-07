@@ -1,0 +1,35 @@
+    /* rip orange eshop 2011 - 2025 */
+
+        #sidebar {
+      background: #ff8000;
+      color: #ffc176;
+
+      width: 480px;
+      display: block;
+      padding-top:38px;
+      margin-right:20px;
+      height:100%;max-height:100%;overflow-x:hidden;overflow-y:auto;
+    }
+    #sidebar a {
+      text-decoration:none;
+      display:block;
+     padding-top:25px;
+     padding-bottom:25px;
+     padding-left:77px;
+     padding-right:77px;
+      width:100%;
+      margin-left:0px;
+      cursor: pointer;
+      font-size: 20px;
+      color:inherit;
+    }
+
+    .selectednav {
+      background: #ffffff33 !important;
+      color: #fde3c0  !important;
+    /* once this is edited, do the same in  NX.js when hovering over a nav element */
+    }
+
+
+
+    /* rip orange eshop 2011 (or 2005 if you count the beta wii shop) - 2025 */
