@@ -33,18 +33,15 @@ font-family: 'UD Shin Go NT Regular JIS2004';
       overflow-x:hidden;
       overflow-y:auto;
     }
-    .sidebar {
+    #sidebar {
       background: #ff8000;
       width: 480px;
-      box-sizing: border-box;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
+      display: block;
       padding-top:38px;
       margin-right:20px;
     }
-d
-    .sidebar div {
+
+    #sidebar div {
       display:block;
      padding-top:25px;
      padding-bottom:25px;
@@ -56,22 +53,22 @@ d
       font-size: 20px;
       color: #ffc176;
     }
-    .sidebar div:hover {
+    #sidebar div:hover {
       background: #ffffff33;
       color: #fde3c0;
     }
-    .sidebar div.selected {
+    #sidebar div.selected {
       background: #ffffff33;
       color: #fde3c0;
     }
-    .content {
+    #content {
       width: 80%;
       padding: 40px;
       box-sizing: border-box;
       overflow-x:hidden;
       overflow-y:auto;
     }
-    .content #sectiontitle {
+    #content #sectiontitle {
       font-size: 23px;
       font-weight:normal;
       margin-bottom: 20px;
