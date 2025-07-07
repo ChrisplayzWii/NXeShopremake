@@ -58,11 +58,11 @@ body {
     }
     #sidebar div:hover {
       background: #ffffff41;
-      color: #fececc;
+      color: #ffe4e3;
     }
     #sidebar div.selected {
       background: #ffffff41;
-      color: #fececc;
+      color: #ffe4e3;
     }
    
     /* main content/titles/everything idk */
