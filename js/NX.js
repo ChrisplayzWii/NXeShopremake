@@ -1,14 +1,14 @@
 var sidenav = document.getElementById("sidebar");
 sidenav.focus();
 
-function hovernavoption(number) {
-   if (number == 1) {
+function hvroption(number) {
+if (number == 1) {
+    document.getElementById("search-navopt").classList.add("selectednav");
+   }
+   if (number == 2) {
     document.getElementById("featured-navopt").classList.add("selectednav");
    }
-      if (number == 2) {
-    document.getElementById("recentreleases-navopt").classList.add("selectednav");
-   }
-         if (number == 3) {
+      if (number == 3) {
     document.getElementById("recentreleases-navopt").classList.add("selectednav");
    }
          if (number == 4) {
@@ -24,18 +24,18 @@ function hovernavoption(number) {
     document.getElementById("nso-navopt").classList.add("selectednav");
    }
          if (number == 8) {
-    document.getElementById("entercode-navopt").classList.add("selectednav");
+    document.getElementById("redeemcode-navopt").classList.add("selectednav");
    }
 }
 
-function unhovernavoption(number) {
+function unhvroption(number) {
    if (number == 1) {
+    document.getElementById("search-navopt").classList.remove("selectednav");
+   }
+   if (number == 2) {
     document.getElementById("featured-navopt").classList.remove("selectednav");
    }
-      if (number == 2) {
-    document.getElementById("recentreleases-navopt").classList.remove("selectednav");
-   }
-         if (number == 3) {
+      if (number == 3) {
     document.getElementById("recentreleases-navopt").classList.remove("selectednav");
    }
          if (number == 4) {
@@ -51,6 +51,6 @@ function unhovernavoption(number) {
     document.getElementById("nso-navopt").classList.remove("selectednav");
    }
          if (number == 8) {
-    document.getElementById("entercode-navopt").classList.remove("selectednav");
+    document.getElementById("redeemcode-navopt").classList.remove("selectednav");
    }
 }
