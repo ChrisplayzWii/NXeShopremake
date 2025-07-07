@@ -14,15 +14,14 @@ font-family: 'UD Shin Go NT Regular JIS2004';
   font-weight: normal;
   font-style: normal;
 }
-
-    body {
+body {
     font-family: 'UD Shin Go NT Regular JIS2004';
       background: #f4f4f4; 
       display: flex;
       height: 100vh;
       color:#454545;
-    }
-    #maincontent {
+}
+#maincontent {
       margin: 0;
       display: flex;
       height: 100vh;
@@ -32,8 +31,65 @@ font-family: 'UD Shin Go NT Regular JIS2004';
       max-height:720px;
       overflow-x:hidden;
       overflow-y:auto;
-    }
+}
+
+    /* main sidenav */
+
     #sidebar {
+      background: #e70012;
+      width: 480px;
+      display: block;
+      padding-top:38px;
+      margin-right:20px;
+    }
+
+    #sidebar div {
+      display:block;
+     padding-top:25px;
+     padding-bottom:25px;
+     padding-left:77px;
+     padding-right:77px;
+      width:100%;
+      margin-left:0px;
+      cursor: pointer;
+      font-size: 20px;
+      color: #fedcce;
+    }
+    #sidebar div:hover {
+      background: #ffffff33;
+      color: #fececc;
+    }
+    #sidebar div.selected {
+      background: #ffffff33;
+      color: #fececc;
+    }
+   
+    /* main content/titles/everything idk */
+
+    #content {
+      width: 80%;
+      padding: 40px;
+      box-sizing: border-box;
+      overflow-x:hidden;
+      overflow-y:auto;
+    }
+    #content #sectiontitle {
+      font-size: 23px;
+      font-weight:normal;
+      margin-bottom: 20px;
+      margin-top:20px;
+    }
+
+    /* main content/titles/everything idk */
+
+
+
+
+
+    /* rip orange eshop 2011 - 2025 */
+
+    /*
+     #sidebar {
       background: #ff8000;
       width: 480px;
       display: block;
@@ -61,25 +117,27 @@ font-family: 'UD Shin Go NT Regular JIS2004';
       background: #ffffff33;
       color: #fde3c0;
     }
-    #content {
-      width: 80%;
-      padding: 40px;
-      box-sizing: border-box;
-      overflow-x:hidden;
-      overflow-y:auto;
-    }
-    #content #sectiontitle {
-      font-size: 23px;
-      font-weight:normal;
-      margin-bottom: 20px;
-      margin-top:20px;
-    }
-    /*
+
+    */
+
+    /* rip orange eshop 2011 (or 2005 if you count the beta wii shop) - 2025 */
+
+
+
+
+
+
+
+
+/* later on, implement the footer if someday this is ran on the eshop webapp based off screenshots of the html: https://imgur.com/a/shopn-jccjb  */
+
+      /*
     #footer {
        background-color:#eaeaea; 
      color:#373737;
      width:100%; min-width:100%; height:69px; max-height:69px;
-     position:absolute;top:635px;left:0;
+     position:absolute;bottom:0px;left:0;
 
     }
     */
+/* later on, implement the footer if someday this is ran on the eshop webapp based off screenshots of the html: https://imgur.com/a/shopn-jccjb  */
