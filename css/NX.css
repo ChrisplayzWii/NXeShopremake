@@ -57,11 +57,11 @@ body {
       color: #fedcce;
     }
     #sidebar div:hover {
-      background: #ffffff33;
+      background: #ffffff41;
       color: #fececc;
     }
     #sidebar div.selected {
-      background: #ffffff33;
+      background: #ffffff41;
       color: #fececc;
     }
    
