@@ -51,7 +51,7 @@ body {
     #sidebarcoverwhenmoved {
       position:relative;top:-36px; left:0px;
       background-color:inherit;
-      width:50px; max-width:50px; min-height:100vh; height:100vh; max-height:100vh; overflow:hidden;
+      width:60px; max-width:60px; min-height:100vh; height:100vh; max-height:100vh; overflow:hidden;
       display:block;
       z-index:3;
             user-select: text;
@@ -115,7 +115,7 @@ body {
       overflow:hidden;
       display:inline-block;
       text-decoration:none;
-      position:absolute;right:79px;
+      position:absolute;right:120px;
     }
       #profileicon {
       height:40px;max-height:40px;

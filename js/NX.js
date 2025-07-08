@@ -1,10 +1,6 @@
 var loadedin = 0;
 
-document.addEventListener("DOMContentLoaded", (event) => {
-if (loadedin = 0) {
-  alert("welcome to NX eShop!");
-}
-});
+
 
 function fullyloadedin() {
 loadedin = 1;
@@ -24,10 +20,11 @@ function initialloadintoeshop() {
   changecontentfornav('2');
     var sidebar2 = document.getElementById("sidelinks");
     sidebar2.focus();
+/*
         var sidebar3 = document.getElementById("search-navopt");
     sidebar3.focus();
+    */
 }
-
 
 
 function movebacknav() {
@@ -44,7 +41,7 @@ changetitlesizeback();
 
 
 function movenavformaincontent() {
-document.getElementById("sidebar").style.width="50px";
+document.getElementById("sidebar").style.width="60px";
 document.getElementById("sidebar").style.overflow="hidden";
 document.getElementById("sidebarcoverwhenmoved").style.display="block";
 document.getElementById("sidelinks").style.display="none";

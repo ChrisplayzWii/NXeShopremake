@@ -10,25 +10,25 @@
   <script src="/NXeShopremake//js/NX.js"></script>
   <!-- /NXeShopremake/ -->
 </head>
-<body onload="initeShop();" ><div id="maincontent" onmouseover="fullyloadedin();">
+<body onload="initeShop(); movebacknav();" ><div id="maincontent" onmouseover="fullyloadedin();">
 
 
-  <div id="sidebar" onmouseleave="movenavformaincontent();"><a href="javascript:movebacknav();" id="sidebarcoverwhenmoved" onmouseover="movebacknav();" style="display:none;"></a>
+  <div id="sidebar"><a href="javascript:movebacknav();" id="sidebarcoverwhenmoved" onmouseover="movebacknav();" style="display:none;"></a>
       <div id="sidelinks">
-      <div id="addspace" style="height:37px;width:inherit;"></div>
-      <a href="javascript:window.location.reload();"tabindex="1" id="search-navopt" class="navlink" onmouseover="changecontentfornav(1);" onmousedown="movenavformaincontent();">&nbsp;&nbsp;&nbsp;Search/Browse</a>
-      <a href="#" tabindex="2" id="featured-navopt" class="navlink" onmouseover="changecontentfornav(2);" onmousedown="movenavformaincontent();">Featured</a>
-      <a href="#" tabindex="3" id="recentreleases-navopt" class="navlink" onmouseover="changecontentfornav(3);" onmousedown="movenavformaincontent();">Recent Releases</a>
-      <a href="#" tabindex="4" id="greatdeals-navopt" class="navlink" onmouseover="changecontentfornav(4);" onmousedown="movenavformaincontent();">Great Deals</a>
-      <a href="#" tabindex="5" id="bestsellers-navopt" class="navlink" onmouseover="changecontentfornav(5);" onmousedown="movenavformaincontent();">Best Sellers</a>
-      <a href="#" tabindex="6" id="comingsoon-navopt" class="navlink" onmouseover="changecontentfornav(6);" onmousedown="movenavformaincontent();">Coming Soon</a>
-      <a href="#" tabindex="7" id="nso-navopt" class="navlink" onmouseover="changecontentfornav(7);" onmousedown="movenavformaincontent();">Nintendo Switch Online</a>
-      <a href="#" tabindex="8" id="redeemcode-navopt" class="navlink" onmouseover="changecontentfornav(8);" onmousedown="movenavformaincontent();">Redeem Code</a>
+      <div id="addspace"  style="display:block;height:37px; min-height:37px; width: inherit;"></div>
+      <a href="#" id="search-navopt" class="navlink" onmouseover="changecontentfornav(1);" >&nbsp;&nbsp;&nbsp;Search/Browse</a>
+      <a href="#" id="featured-navopt" class="navlink" onmouseover="changecontentfornav(2);" >Featured</a>
+      <a href="#" id="recentreleases-navopt" class="navlink" onmouseover="changecontentfornav(3);" >Recent Releases</a>
+      <a href="#" id="greatdeals-navopt" class="navlink" onmouseover="changecontentfornav(4);" >Great Deals</a>
+      <a href="#" id="bestsellers-navopt" class="navlink" onmouseover="changecontentfornav(5);" >Best Sellers</a>
+      <a href="#" id="comingsoon-navopt" class="navlink" onmouseover="changecontentfornav(6);" >Coming Soon</a>
+      <a href="#" id="nso-navopt" class="navlink" onmouseover="changecontentfornav(7);" >Nintendo Switch Online</a>
+      <a href="javascript:window.location.reload();" id="redeemcode-navopt" class="navlink" onmouseover="changecontentfornav(8);" >Redeem Code</a>
       </div>
   </div>
 
 
-  <div id="content" style="user-select: none;pointer-events: none;">
+  <div id="content" style="user-select: none;pointer-events: none;" onpointerover="movenavformaincontent();">
  <div id="stuffinsidecontent" style="user-select: text; pointer-events: auto;" >
 
        <div id="sectiontitle">Featured</div>
@@ -39,16 +39,35 @@
     
   <div id="titleslist">
 
-<div id="title01" class="titlecard-announcement">
-<a href="test.html" id="title01link" class="titlelink"></a>
-<img src="" id="title01img" alt=" " loading="lazy">
-<div id="title01info" class="info">Nintendo Switch 2, available 05/06/2025</div>
+<div id="bigcatagory01" class="titlecard-announcement">
+<a href="test.html" id="bigcatagory01link" class="titlelink"></a>
+<img id="bigcatagory01img" src="/NXeShopremake/titles/JP/img-eshop.cdn.nintendo.net/" alt=" " loading="lazy">
+<div id="bigcatagory01info"class="info">Nintendo Switch 2, available 05/06/2025</div>
 </div>
 
-<div id="title01" class="titlecard-announcement">
+
+<div id="title01" class="titlecard-frontpage-small">
 <a href="#" id="title01link" class="titlelink"></a>
-<img src="" id="title01img" alt=" " loading="lazy">
-<div id="title01info" class="info">Nintendo Switch 2, available 05/06/2025</div>
+<img id="title01img" src="/NXeShopremake/titles/JP/img-eshop.cdn.nintendo.net/e681f02b84dd9f7207b2b00ec7803e39d242141af0fb681f0d27f2d824898373.jpg" alt=" " loading="lazy">
+<div id="title01info"class="info">Mario Kart™ 8 Deluxe</div>
+</div>
+
+<div id="title02" class="titlecard-frontpage-small">
+<a href="#" id="title02link" class="titlelink"></a>
+<img id="title02img" src="/NXeShopremake/titles/JP/img-eshop.cdn.nintendo.net/2a23faa1822c06adf074c8bb2ccf5f46a23490b3fe267e176e0b5339d0e1d3b7.jpg" alt=" " loading="lazy">
+<div id="title02info"class="info">Super Mario Party™ Jamboree</div>
+</div>
+
+<div id="title03" class="titlecard-frontpage-small">
+<a href="#" id="title03link" class="titlelink"></a>
+<img id="title03img" src="/NXeShopremake/titles/JP/img-eshop.cdn.nintendo.net/1a637778f3ea270ca6ff053d0204073e555575099e82cb018ddb1877be0a0fde.jpg" alt=" " loading="lazy">
+<div id="title03info"class="info">The Legend of Zelda™: Tears of the Kingdom</div>
+</div>
+
+<div id="title04" class="titlecard-frontpage-small">
+<a href="#" id="title04link" class="titlelink"></a>
+<img id="title04img" src="/NXeShopremake/titles/JP/img-eshop.cdn.nintendo.net/c2ca89f80c33548e972dbba1dd0a3e3279c56a33b81fa426499f66cad7a4c2b2.jpg" alt=" " loading="lazy">
+<div id="title04info"class="info">Super Mario Bros.™ Wonder</div>
 </div>
  
 </div>

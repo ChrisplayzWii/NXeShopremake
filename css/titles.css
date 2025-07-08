@@ -1,9 +1,25 @@
     #titleslist {
       display:block;
-      width:100%; min-height:579px;
+      min-height:579px;
       transition:.3s ease-in-out;
       z-index:2;
+      width:760px; max-width:760px; overflow:hidden;
     }
+   #titleslist img {
+  min-width:inherit; width:inherit;
+  min-height:214px; max-height:214px;
+  border:none !important;
+  background-color:#d6d6d6; 
+  display:block;
+  }
+  #titleslist .info {
+   min-width:inherit; max-width:inherit; min-height:26px; max-height:26px; overflow:hidden; white-space:nowrap; background-color:#FFF;
+   display:block;
+   padding-left:5px;
+   font-size:17px;
+  color:#5c5c5c;
+  text-overflow:ellipsis;
+  }
 
 /* frontpage */
 
@@ -12,25 +28,22 @@
   }
   .titlecard-announcement {
     position:relative;
-    display:inline-block;
+    display:block;
     background-color:#ffffff;
-    color:#7f7f7f;
     width:715px; max-width:715px;max-height:240px;
     height: 240px;
+ margin-top:8px; margin-bottom:9px;
     white-space:wrap;
   }
-  .titlecard-announcement img {
-  min-width:inherit; width:inherit;
-  min-height:214px; max-height:214px;
-  border:none !important;
-  background-color:#d6d6d6; 
-  display:block;
+
+  .titlecard-frontpage-small {
+        position:relative;
+    display:inline-block;
+    background-color:#ffffff;
+    width:357px; max-width:357px;max-height:240px;
+    height: 240px;
+    margin-top:8px; margin-bottom:9px;
+    white-space:wrap;
   }
-  .titlecard-announcement .info {
-   min-width:inherit; min-height:26px; max-height:26px; background-color:#FFF;
-   display:block;
-   padding-left:5px;
-   font-size:17px;
-  
-  }
+
 /* frontpage */
