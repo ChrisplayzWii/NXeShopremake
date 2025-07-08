@@ -7,7 +7,6 @@
       width: 480px;
       display: block;
       margin-left:0;
-      padding-top:37px;
       height:100%;max-height:720px; overflow:hidden auto; /* x,y*/
       transition:.2s ease-in-out;
       z-index:2;

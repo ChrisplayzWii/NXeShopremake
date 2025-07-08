@@ -41,7 +41,6 @@ body {
       width: 480px;
       display: block;
       margin-left:0;
-      padding-top:37px;
       height:100vh;max-height:100vh; overflow:hidden auto; /* x,y*/
       transition:.2s ease-in-out;
       z-index:2;
