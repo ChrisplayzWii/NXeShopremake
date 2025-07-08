@@ -11,9 +11,6 @@ loadedin = 1;
 initialloadintoeshop();
 
 var content = document.getElementById('content'); 
-content.onclick = function() {
-  movenavformaincontent();
-};
 content.onmouseover = function() {
   movenavformaincontent();
 };
@@ -32,14 +29,14 @@ function initialloadintoeshop() {
 
 
 function movebacknav() {
+var loadcheckk = document.getElementById('content'); loadcheckk.onmouseover = function() {};
         var content = document.getElementById('content'); 
 content.onmouseover = function() {
   movenavformaincontent();
 };
-content.onclick = function() {
-  movenavformaincontent();
-};
-var loadcheckk = document.getElementById('content'); loadcheckk.onmouseover = function() {};
+
+    var sidebar2 = document.getElementById("sidelinks");
+    sidebar2.focus();
 document.getElementById("sidebar").style.width="480px";
 document.getElementById("sidebar").style.overflow="hidden";
 document.getElementById("sidelinks").style.display="block";
@@ -51,7 +48,6 @@ changetitlesizeback();
 function movenavformaincontent() {
         var content = document.getElementById('content'); 
 content.onmouseover = function() {};
-content.onclick = function() {};
 document.getElementById("sidebar").style.width="50px";
 document.getElementById("sidebar").style.overflow="hidden";
 document.getElementById("sidebarcoverwhenmoved").style.display="block";
