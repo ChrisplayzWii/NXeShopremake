@@ -14,20 +14,20 @@
 
   <div id="sidebar"><a href="javascript:movebacknav();" id="sidebarcoverwhenmoved" style="display:none;"></a>
       <div id="sidelinks">
-      <a href="javascript:window.location.reload();"tabindex="1" id="search-navopt" class="navlink" onmouseover="changecontentfornav(1);">&nbsp;&nbsp;&nbsp;Search/Browse</a>
-      <a href="javascript:movenavformaincontent();" tabindex="2" id="featured-navopt" class="navlink" onmouseover="changecontentfornav(2);">Featured</a>
-      <a href="javascript:movenavformaincontent();" tabindex="3" id="recentreleases-navopt" class="navlink" onmouseover="changecontentfornav(3);">Recent Releases</a>
-      <a href="javascript:movenavformaincontent();" tabindex="4" id="greatdeals-navopt" class="navlink" onmouseover="changecontentfornav(4);">Great Deals</a>
-      <a href="javascript:movenavformaincontent();" tabindex="5" id="bestsellers-navopt" class="navlink" onmouseover="changecontentfornav(5);">Best Sellers</a>
-      <a href="javascript:movenavformaincontent();" tabindex="6" id="comingsoon-navopt" class="navlink" onmouseover="changecontentfornav(6);">Coming Soon</a>
-      <a href="javascript:movenavformaincontent();" tabindex="7" id="nso-navopt" class="navlink" onmouseover="changecontentfornav(7);">Nintendo Switch Online</a>
-      <a href="javascript:movenavformaincontent();" tabindex="8" id="redeemcode-navopt" class="navlink" onmouseover="changecontentfornav(8);">Redeem Code</a>
+      <a href="javascript:window.location.reload();"tabindex="1" id="search-navopt" class="navlink" onmouseover="changecontentfornav(1);" onmousedown="movenavformaincontent();">&nbsp;&nbsp;&nbsp;Search/Browse</a>
+      <a href="#" tabindex="2" id="featured-navopt" class="navlink" onmouseover="changecontentfornav(2);" onmousedown="movenavformaincontent();">Featured</a>
+      <a href="#" tabindex="3" id="recentreleases-navopt" class="navlink" onmouseover="changecontentfornav(3);" onmousedown="movenavformaincontent();">Recent Releases</a>
+      <a href="#" tabindex="4" id="greatdeals-navopt" class="navlink" onmouseover="changecontentfornav(4);" onmousedown="movenavformaincontent();">Great Deals</a>
+      <a href="#" tabindex="5" id="bestsellers-navopt" class="navlink" onmouseover="changecontentfornav(5);" onmousedown="movenavformaincontent();">Best Sellers</a>
+      <a href="#" tabindex="6" id="comingsoon-navopt" class="navlink" onmouseover="changecontentfornav(6);" onmousedown="movenavformaincontent();">Coming Soon</a>
+      <a href="#" tabindex="7" id="nso-navopt" class="navlink" onmouseover="changecontentfornav(7);" onmousedown="movenavformaincontent();">Nintendo Switch Online</a>
+      <a href="#" tabindex="8" id="redeemcode-navopt" class="navlink" onmouseover="changecontentfornav(8);" onmousedown="movenavformaincontent();">Redeem Code</a>
       </div>
   </div>
 
 
   <div id="content" onmouseover="movenavformaincontent();" style="user-select: none;pointer-events: none;">
- <div id="stuffinsidecontent" style="user-select: text;pointer-events: auto;">
+ <div id="stuffinsidecontent" style="user-select: text; pointer-events: auto;" onmouseover="movenavformaincontent();" onmouseenter="movenavformaincontent();">
 
        <div id="sectiontitle">Featured</div>
       <a href="#" id="profile">
