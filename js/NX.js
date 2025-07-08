@@ -36,6 +36,9 @@ function movebacknav() {
 content.onmouseover = function() {
   movenavformaincontent();
 };
+content.onclick = function() {
+  movenavformaincontent();
+};
 var loadcheckk = document.getElementById('content'); loadcheckk.onmouseover = function() {};
 document.getElementById("sidebar").style.width="480px";
 document.getElementById("sidebar").style.overflow="hidden";
@@ -48,6 +51,7 @@ changetitlesizeback();
 function movenavformaincontent() {
         var content = document.getElementById('content'); 
 content.onmouseover = function() {};
+content.onclick = function() {};
 document.getElementById("sidebar").style.width="50px";
 document.getElementById("sidebar").style.overflow="hidden";
 document.getElementById("sidebarcoverwhenmoved").style.display="block";
