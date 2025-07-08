@@ -38,12 +38,20 @@ body {
     #sidebar {
       background: #e70012;
       color:#fedcce;
-      
+      position:relative;
       width: 480px;
       display: block;
       padding-top:38px;
-      margin-right:20px;
-      height:100%;max-height:100%;overflow-x:hidden;overflow-y:auto;
+      
+      margin-left:0;
+      height:100%;max-height:100%; overflow:hidden auto; /* x,y*/
+      transition:.2s ease-in-out;
+    }
+    #sidebarcoverwhenmoved {
+      position:relative;top:-38px;
+      background-color:inherit;
+      width:480px;height:106%; max-height:106%; overflow:hidden;
+      display:block;
     }
     #sidebar a {
       text-decoration:none;
@@ -59,27 +67,66 @@ body {
       color:inherit;
     }
 
-    .selectednav {
+    #sidebar a:hover {
       background: #ffffff41 !important;
       color: #ffe4e3  !important;
-     /* once this is edited, do the same in  NX.js when hovering over a nav element */
+    }
+    #sidebar a:focus {
+      background: #ffffff41 !important;
+      color: #ffe4e3  !important;
     }
    
     /* main content/titles/everything idk */
 
+
     #content {
-      width: 80%;
+      width: 100%;
       padding: 40px;
       box-sizing: border-box;
-      overflow-x:hidden;
-      overflow-y:auto;
+      overflow:hidden auto; /* x,y*/
+      position:relative;
+      padding-left:60px;
+      height:100%;
+      z-index:1;
     }
     #content #sectiontitle {
       font-size: 23px;
       font-weight:normal;
-      margin-bottom: 20px;
       margin-top:20px;
+      line-height:30px;
+      height:35px;max-height:35px;
+      width:90%;
+      overflow:hidden;
+      display:inline-block;
+      transition:.3s ease-in-out;
     }
+
+    #profile {
+      line-height:40px;
+      height:40px; max-height:40px;
+      width:65px;
+      overflow:hidden;
+      display:inline-block;
+      text-decoration:none;
+      position:absolute;right:79px;
+    }
+      #profileicon {
+      height:40px;max-height:40px;
+      border-radius:45px;
+      width:40px;
+      overflow:hidden;
+      display:inline-block;
+      padding:0; margin:0;  border:none;
+      background-color:#dddddd;
+    }
+    #profileselect {
+       display:inline-block; position:relative;top:-15px; margin-left:1px;
+       height:20px;
+       font-size:25px;
+       color:orange;
+       font-weight:bold;
+    }
+
 
     /* main content/titles/everything idk */
 

@@ -4,31 +4,52 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ShopN - ashigaru</title>
-  <link rel="stylesheet" href="/NXeShopremake/css/NX.css">
-  <script src="/NXeShopremake/js/NX.js"></script>
+  <link rel="stylesheet" href="/css/NX.css">
+  <link rel="stylesheet" href="/css/titles.css">
+  <script src="/js/NX.js"></script>
   <!-- /NXeShopremake/ -->
 </head>
-<body><div id="maincontent" >
+<body onload="initeShop();"><div id="maincontent" onmouseover="fullyloadedin();" >
 
 
-  <div id="sidebar">
-      <a href="javascript:window.location.reload();" id="search-navopt" onmouseover="hovernav(this);" onmouseout="leavenav(this);">&nbsp;&nbsp;&nbsp;Search/Browse</a>
-      <a href="#" id="featured-navopt" onmouseover="hovernav(this);" onmouseout="leavenav(this);">Featured</a>
-      <a href="#" id="recentreleases-navopt" onmouseover="hovernav(this);" onmouseout="leavenav(this);">Recent Releases</a>
-      <a href="#" id="greatdeals-navopt" onmouseover="hovernav(this);" onmouseout="leavenav(this);">Great Deals</a>
-      <a href="#" id="bestsellers-navopt" onmouseover="hovernav(this);" onmouseout="leavenav(this);">Best Sellers</a>
-      <a href="#" id="comingsoon-navopt" onmouseover="hovernav(this);" onmouseout="leavenav(this);">Coming Soon</a>
-      <a href="#" id="nso-navopt" onmouseover="hovernav(this);" onmouseout="leavenav(this);">Nintendo Switch Online</a>
-      <a href="#" id="redeemcode-navopt" onmouseover="hovernav(this);" onmouseout="leavenav(this);">Redeem Code</a>
+  <div id="sidebar"><a href="javascript:movebacknav();" id="sidebarcoverwhenmoved" style="display:none;"></a>
+      <div id="sidelinks">
+      <a href="javascript:window.location.reload();" id="search-navopt" onmouseover="changecontentfornav(1);">&nbsp;&nbsp;&nbsp;Search/Browse</a>
+      <a href="#" id="featured-navopt" onmouseover="changecontentfornav(2);">Featured</a>
+      <a href="#" id="recentreleases-navopt" onmouseover="changecontentfornav(3);">Recent Releases</a>
+      <a href="#" id="greatdeals-navopt" onmouseover="changecontentfornav(4);">Great Deals</a>
+      <a href="#" id="bestsellers-navopt" onmouseover="changecontentfornav(5);">Best Sellers</a>
+      <a href="#" id="comingsoon-navopt" onmouseover="changecontentfornav(6);">Coming Soon</a>
+      <a href="#" id="nso-navopt" onmouseover="changecontentfornav(7);">Nintendo Switch Online</a>
+      <a href="#" id="redeemcode-navopt" onmouseover="changecontentfornav(8);">Redeem Code</a>
+      </div>
   </div>
 
 
-  <div id="content">
-    
-    <div id="featured">
+  <div id="content" onclick="">
+
       <div id="sectiontitle">Featured</div>
+      <a href="#" id="profile">
+        <img id="profileicon" src=""  alt=" ">
+        <p id="profileselect">></p>
+      </a>
     
-    </div>
+  <div id="titleslist">
+
+<div id="title01" class="titlecard-announcement">
+<a href="test.html" id="title01link" class="titlelink"></a>
+<img src="" id="title01img" alt=" " loading="lazy">
+<div id="title01info" class="info">Nintendo Switch 2, available 05/06/2025</div>
+</div>
+
+<div id="title01" class="titlecard-announcement">
+<a href="#" id="title01link" class="titlelink"></a>
+<img src="" id="title01img" alt=" " loading="lazy">
+<div id="title01info" class="info">Nintendo Switch 2, available 05/06/2025</div>
+</div>
+
+
+      </div>
 
 
   </div>
