@@ -24,19 +24,17 @@ function initialloadintoeshop() {
   changecontentfornav('2');
     var sidebar2 = document.getElementById("sidelinks");
     sidebar2.focus();
+        var sidebar3 = document.getElementById("search-navopt");
+    sidebar3.focus();
 }
 
 
 
 function movebacknav() {
-var loadcheckk = document.getElementById('content'); loadcheckk.onmouseover = function() {};
-        var content = document.getElementById('content'); 
-content.onmouseover = function() {
-  movenavformaincontent();
-};
-
     var sidebar2 = document.getElementById("sidelinks");
     sidebar2.focus();
+        var sidebar3 = document.getElementById("search-navopt");
+    sidebar3.focus();
 document.getElementById("sidebar").style.width="480px";
 document.getElementById("sidebar").style.overflow="hidden";
 document.getElementById("sidelinks").style.display="block";
@@ -46,8 +44,6 @@ changetitlesizeback();
 
 
 function movenavformaincontent() {
-        var content = document.getElementById('content'); 
-content.onmouseover = function() {};
 document.getElementById("sidebar").style.width="50px";
 document.getElementById("sidebar").style.overflow="hidden";
 document.getElementById("sidebarcoverwhenmoved").style.display="block";

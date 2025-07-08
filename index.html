@@ -13,7 +13,7 @@
 <body onload="initeShop();" ><div id="maincontent" onmouseover="fullyloadedin();">
 
 
-  <div id="sidebar"><a href="javascript:movebacknav();" id="sidebarcoverwhenmoved" style="display:none;"></a>
+  <div id="sidebar" onmouseleave="movenavformaincontent();"><a href="javascript:movebacknav();" id="sidebarcoverwhenmoved" style="display:none;"></a>
       <div id="sidelinks">
       <a href="javascript:window.location.reload();"tabindex="1" id="search-navopt" class="navlink" onmouseover="changecontentfornav(1);" onmousedown="movenavformaincontent();">&nbsp;&nbsp;&nbsp;Search/Browse</a>
       <a href="#" tabindex="2" id="featured-navopt" class="navlink" onmouseover="changecontentfornav(2);" onmousedown="movenavformaincontent();">Featured</a>
@@ -27,8 +27,8 @@
   </div>
 
 
-  <div id="content" onmouseover="movenavformaincontent();" style="user-select: none;pointer-events: none;">
- <div id="stuffinsidecontent" style="user-select: text; pointer-events: auto;" onmouseover="movenavformaincontent();" onmouseenter="movenavformaincontent();">
+  <div id="content" style="user-select: none;pointer-events: none;">
+ <div id="stuffinsidecontent" style="user-select: text; pointer-events: auto;" >
 
        <div id="sectiontitle">Featured</div>
       <a href="#" id="profile">
