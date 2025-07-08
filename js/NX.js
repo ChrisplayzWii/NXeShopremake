@@ -24,6 +24,8 @@ function initialloadintoeshop() {
   changecontentfornav('2');
       var ele = document.getElementById("featured-navopt");
     ele.focus();
+    var sidebar = document.getElementById("sidebar");
+    sidebar.focus();
 }
 
 
