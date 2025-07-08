@@ -14,23 +14,29 @@ var content = document.getElementById('content');
 content.onclick = function() {
   movenavformaincontent();
 };
-setTimeout(clearfeaturedfocus,100);
+content.onmouseover = function() {
+  movenavformaincontent();
+};
+
+
 }
 
-function clearfeaturedfocus() {var loadcheckk = document.getElementById('maincontent'); loadcheckk.onmouseover = function() {};var featuree = document.getElementById('featured-navopt'); featuree.blur();}
 
 function initialloadintoeshop() {
   // first page they see
   changecontentfornav('2');
-      var ele = document.getElementById("featured-navopt");
-    ele.focus();
-    var sidebar = document.getElementById("sidebar");
-    sidebar.focus();
+    var sidebar2 = document.getElementById("sidelinks");
+    sidebar2.focus();
 }
 
 
 
 function movebacknav() {
+        var content = document.getElementById('content'); 
+content.onmouseover = function() {
+  movenavformaincontent();
+};
+var loadcheckk = document.getElementById('content'); loadcheckk.onmouseover = function() {};
 document.getElementById("sidebar").style.width="480px";
 document.getElementById("sidebar").style.overflow="hidden";
 document.getElementById("sidelinks").style.display="block";
@@ -40,7 +46,8 @@ changetitlesizeback();
 
 
 function movenavformaincontent() {
-
+        var content = document.getElementById('content'); 
+content.onmouseover = function() {};
 document.getElementById("sidebar").style.width="50px";
 document.getElementById("sidebar").style.overflow="hidden";
 document.getElementById("sidebarcoverwhenmoved").style.display="block";
@@ -74,12 +81,10 @@ document.getElementById("sectiontitle").style.fontSize="23px";
 function changecontentfornav(cont) {
 
  if (cont ==  1) {
+
    var titleofcatalog = document.getElementById("sectiontitle"); var catalog = document.getElementById("titleslist");
-    if (titleofcatalog) { titleofcatalog.innerText="Search/Browse"; }
-        var content = document.getElementById('content'); 
-content.onmouseover = function() {
-  movenavformaincontent();
-};
+    if (titleofcatalog) {  titleofcatalog.innerText="Search/Browse"; } 
+
 /*
     if (catalog) {
      catalog.innerHTML=
@@ -90,12 +95,10 @@ content.onmouseover = function() {
 */
  }
   if (cont ==  2) {
+
  var titleofcatalog = document.getElementById("sectiontitle"); var catalog = document.getElementById("titleslist");
     if (titleofcatalog) { titleofcatalog.innerText="Featured"; }
-        var content = document.getElementById('content'); 
-content.onmouseover = function() {
-  movenavformaincontent();
-};
+
 /*
     if (catalog) {
      catalog.innerHTML=
@@ -106,12 +109,10 @@ content.onmouseover = function() {
 */
  }
   if (cont ==  3) {
+
     var titleofcatalog = document.getElementById("sectiontitle"); var catalog = document.getElementById("titleslist");
     if (titleofcatalog) { titleofcatalog.innerText="Recent Releases"; }
-    var content = document.getElementById('content'); 
-content.onmouseover = function() {
-  movenavformaincontent();
-};
+
 /*
     if (catalog) {
      catalog.innerHTML=
@@ -124,10 +125,7 @@ content.onmouseover = function() {
   if (cont ==  4) {
     var titleofcatalog = document.getElementById("sectiontitle"); var catalog = document.getElementById("titleslist");
     if (titleofcatalog) { titleofcatalog.innerText="Great Deals";} 
-        var content = document.getElementById('content'); 
-content.onmouseover = function() {
-  movenavformaincontent();
-};
+
 /*
     if (catalog) {
      catalog.innerHTML=
@@ -140,10 +138,7 @@ content.onmouseover = function() {
   if (cont ==  5) {
     var titleofcatalog = document.getElementById("sectiontitle"); var catalog = document.getElementById("titleslist");
     if (titleofcatalog) { titleofcatalog.innerText="Best Sellers"; }
-        var content = document.getElementById('content'); 
-content.onmouseover = function() {
-  movenavformaincontent();
-};
+
 /*
     if (catalog) {
      catalog.innerHTML=
@@ -156,10 +151,7 @@ content.onmouseover = function() {
   if (cont ==  6) {
     var titleofcatalog = document.getElementById("sectiontitle"); var catalog = document.getElementById("titleslist");
     if (titleofcatalog) { titleofcatalog.innerText="Coming Soon"; }
-        var content = document.getElementById('content'); 
-content.onmouseover = function() {
-  movenavformaincontent();
-};
+
 /*
     if (catalog) {
      catalog.innerHTML=
@@ -172,10 +164,7 @@ content.onmouseover = function() {
   if (cont ==  7) {
     var titleofcatalog = document.getElementById("sectiontitle"); var catalog = document.getElementById("titleslist");
     if (titleofcatalog) { titleofcatalog.innerText="Nintendo Switch Online"; }
-        var content = document.getElementById('content'); 
-content.onmouseover = function() {
-  movenavformaincontent();
-};
+
 /*
     if (catalog) {
      catalog.innerHTML=
@@ -188,10 +177,7 @@ content.onmouseover = function() {
   if (cont ==  8) {
     var titleofcatalog = document.getElementById("sectiontitle"); var catalog = document.getElementById("titleslist");
     if (titleofcatalog) { titleofcatalog.innerText="Redeem Code"; }
-        var content = document.getElementById('content'); 
-content.onmouseover = function() {
-  movenavformaincontent();
-};
+
 /*
     if (catalog) {
      catalog.innerHTML=
