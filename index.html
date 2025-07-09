@@ -8,7 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <title>ShopN (remade) - REBUILD 1</title>
   <link rel="shortcut icon" href="https://www.nintendo.com/favicon.ico" type="image/x-icon">
-  <script type="text/javascript">
+<!-- doesnt currently work but keep incase i need a var or smth 
+   <script type="text/javascript">
   // from: https://mrohkkcptggjkje1.switch.tv.twitch.tv/app-shell?unique_id=c4795405ecfb518bb856648aab1e32cb&lnchv=1.0.0&ipc-version=switch-1
 if(window.nx){
    window.nx.footer.setFixed("hidden"); // hidden or ?
@@ -16,6 +17,7 @@ if(window.nx){
     window.nx.footer.unsetAssign("b"); // b (a? +? )
 }
 </script>
+-->
 
   <style>
 * {
@@ -38,7 +40,7 @@ font-family: 'A-OTF UD Shin Go NT Regular';
 body {
     font-family: 'A-OTF UD Shin Go NT Regular';
       background-color:#FFF;
-      height: 100vh;
+      height: 100vh; width:1280px; max-width:1280px;
       color:#454545;
 }
 #pagecontainer {
@@ -76,6 +78,10 @@ display:block;
 background: #ffffff41;
 color: #ffe4e3;
 }
+#sidenav .navlink a:focus {
+background: #ffffff41;
+color: #ffe4e3;
+}
 
 /* main content */
 
@@ -84,7 +90,7 @@ color: #ffe4e3;
     background-color:#f6f6f6;
     display:inline-block;
     margin-left:410px; /* 480px; */
-    width:800px; max-width:800px;
+    width:820px; max-width:820px; /* 800px */
     overflow-x:hidden;
     min-height:719px; /* min-height:720px; */ height:fit-content;
     user-select:none; pointer-events:none;
