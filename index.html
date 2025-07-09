@@ -136,6 +136,11 @@ color: #ffe4e3;
 }
   </style>
   <script>
+    if (navigator.userAgent.toLowerCase().includes("WifiWebAuthApplet")) {
+      /* it has its own :p */
+    document.getElementById("footer").style.display="none";  
+}
+
     /* https://stackoverflow.com/a/37020542 */
     document.addEventListener("scroll", function () {
       document.getElementById("footer").style.height="0px";
