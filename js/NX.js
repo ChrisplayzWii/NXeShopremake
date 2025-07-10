@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-  document.getElementById("sidenav").focus();
+  document.getElementById("sidenavlinks").focus();
   
 /* footer */
 
