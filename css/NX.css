@@ -11,7 +11,7 @@ transition:.2s ease-in-out;
 @font-face {
 font-family: 'A-OTF UD Shin Go NT Regular';
   /*src: url('https://wf.typesquare.com/3/tsad/dist/ja/ts?condition=4d1efa0941ffe65c7c17d219b21585a3&onetime_condition=&eid=qP9CSvpiTpM%3D&location=en.morisawa.co.jp%2F&fonts[id]=2072&fonts[str]=LC4vMDEyMzQ1NkFCQ0RGR0hJSktMTU5SU1RVV2FiY2RlZmdoaWtsbW5vcHFyc3R1dnd4eXrigJnigJzigJ0%3D');*/
-  src: url('/NXeShopremake/font/ts'); /* got this by magik (plz dont kill me morisawa, thx!!!) ;) */
+  src: url('/NXeShopremake/font/ts'); /* got this by magik ;) (plz dont kill me morisawa, thx!!!) */
   font-weight: normal;
   font-style: normal;
 }
@@ -68,8 +68,7 @@ text-decoration:none;
 text-align:left;
 font-size: 20px;
 min-width:100%; width:100%; max-width:100%;
-height:76px; max-height:76px; overflow:hidden;
-padding-top:21px; padding-bottom:15px; padding-left:75px;
+      height:80px; max-height:80px; padding-top:25px; padding-bottom:30px; overflow:hidden;  padding-left:75px;
 display:block; word-wrap:none;
 }
 #sidenavcover {
@@ -80,7 +79,7 @@ background-color:inherit; user-select:auto; pointer-events:auto;
 
 /* for some reason, :hover doesnt work on switch for the selector box, focus does tho! */
 #sidenavcover:hover {background-color: #ffffff41 !important;} #sidenavcover:focus {background-color: #ffffff41 !important;}
-#sidenav .navlink a:hover {background: #ffffff41;color: #ffe4e3;} #sidenav .navlink a:focus {background: #ffffff41;color: #ffe4e3;}
+#sidenav .navlink a:hover {background-color: #ffffff41;color: #ffe4e3;} #sidenav .navlink a:focus {background-color: #ffffff41;color: #ffe4e3;}
 
 
 

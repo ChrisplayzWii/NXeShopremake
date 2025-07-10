@@ -30,9 +30,20 @@ if(window.nx){
  <div id="sidenav">
    <a id="sidenavcover" style="display:none;" onclick="opennav();"></a>
 
-   <div id="sidenavlinks">
+   <div id="sidenavlinks" tabindex="0" onblur="closenav();">
+    <style>
+      #navlink1 {
+        background-image:url("/NXeShopremake/images/icons/searchicon-remade.svg");
+        background-size:30px; background-repeat:no-repeat;
+        background-position: 75px 26px; /* x,y */
+      }
+      #navlink1 #searchnavtxt  {
+        display:inline-block;
+        position:relative;  left:40px;
+      }
+    </style>
     <div id="addspace" onclick="window.location.reload();"  style="display:block;height:43px; min-height:43px; width: inherit;"></div>
-    <div class="navlink" style="padding-left:10px;"><a href="#" onmousedown="closenav();" id="navlink1">Search/Browse</a></div>
+    <div class="navlink"><a href="#" onmousedown="closenav();" id="navlink1"><p id="searchnavtxt">Search/Browse</p></a></div>
     <div class="navlink"><a href="#" onmousedown="closenav();" id="navlink2">Featured</a></div>
     <div class="navlink"><a href="#" onmousedown="closenav();" id="navlink3">Recent Releases</a></div>
     <div class="navlink"><a href="#" onmousedown="closenav();" id="navlink4">Great Deals</a></div>
@@ -54,7 +65,7 @@ if(window.nx){
       <a href="#" id="profile"><img id="profileicon" src=""  alt=" "></a>
     </div>
 
-   <div id="titlelist" onchange="closenav();">
+   <div id="titlelist" tabindex="1" >
 
     <div id="bigcard1" class="card-big">
       <a href="#" id="bigcardhref1">
@@ -72,14 +83,14 @@ if(window.nx){
 
     <div id="smallcard1" class="card-featured-normal">
       <a href="#" id="smallcardhref1">
-       <img id="smallcardimg1" class="cardimg"  src="/NXeShopremake/titles/US/nintendo.com-store-/d33ed7f51de601b10cafa5814fd786bbad317b0421a43d54917a2c647be2f23b.avif" alt=" ">
+       <img id="smallcardimg1" class="cardimg"  src="/NXeShopremake/titles/US/nintendo.com-store-/" alt=" ">
        <div id="smallcardinfo1" class="cardinfo">Xenoblade Chronicles&trade; X: Definitive Edition</div>
       </a>
     </div>
 
     <div id="smallcard2" class="card-featured-normal">
       <a href="#" id="smallcardhref2">
-       <img id="smallcardimg2" class="cardimg"  src="/NXeShopremake/titles/US/nintendo.com-store-/ba0572bf9d840b03bf9958809943fb3c76c3adfd6d8f2704b0f1b766f8aa4027.avif" alt=" ">
+       <img id="smallcardimg2" class="cardimg"  src="/NXeShopremake/titles/US/nintendo.com-store-/" alt=" ">
        <div id="smallcardinfo2" class="cardinfo">Super Mario Party&trade; Jamboree</div>
       </a>
     </div>
