@@ -96,18 +96,18 @@ background-color:inherit; user-select:auto; pointer-events:auto;
     min-height:719px; /* min-height:720px; */ height:fit-content;
     user-select:none; pointer-events:none;
 }
-#innerContent {min-height:719px; height:fit-content; user-select:text; pointer-events:auto; position:relative;  max-width:815px;  padding-top:30px; padding-left:55px; }
+#innerContent {min-height:719px; height:fit-content; user-select:text; pointer-events:auto; position:relative;  max-width:815px;  padding-top:40px; padding-left:55px; }
 
 #pagehead {
 display:block;
 width:760px;
 padding-top:3px;
-height:50px; overflow:hidden;
+height:55px; overflow:hidden;
 padding-right:5px;
 }
 #sectiontitle {
   color:#454545;
-  font-size: 20px; font-weight:normal; line-height:25px; height:30px; overflow:hidden; 
+  font-size: 22px; font-weight:normal; line-height:25px; height:30px; overflow:hidden; 
   display:block;
 }
     #profile {

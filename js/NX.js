@@ -24,8 +24,8 @@ if (navigator.userAgent.toLowerCase().includes("wifiwebauthapplet")) {
 
 
 function closenav() {
-  changetitlesize();
-    document.getElementById("pagehead").style.width="1050px"; document.getElementById("sectiontitle").style.fontSize="26px";
+  changetitlesize(); document.getElementById("pagehead").style.height="65px";
+    document.getElementById("pagehead").style.width="1050px"; document.getElementById("sectiontitle").style.fontSize="28px";
   document.getElementById("tempcover").style.display="none";
    document.getElementById("sidenav").style.transition=".2s ease-in-out";
    document.getElementById("contentaftersidenav").style.transition=".2s ease-in-out";
@@ -36,7 +36,8 @@ function closenav() {
 }
 
 function opennav() {
-  document.getElementById("pagehead").style.width="760px"; document.getElementById("sectiontitle").style.fontSize="20px";
+  document.getElementById("pagehead").style.width="760px"; document.getElementById("sectiontitle").style.fontSize="22px";
+  document.getElementById("pagehead").style.height="55px";
   var bgofside = document.getElementById("sidenav").style.backgroundColor;
   document.getElementById("tempcover").style.backgroundColor= bgofside;
   document.getElementById("tempcover").style.display="block";
