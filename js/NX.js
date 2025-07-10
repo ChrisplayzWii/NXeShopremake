@@ -25,7 +25,7 @@ if (navigator.userAgent.toLowerCase().includes("wifiwebauthapplet")) {
 
 function closenav() {
   changetitlesize();
-    document.getElementById("pagehead").style.width="1050px"; document.getElementById("sectiontitle").style.fontSize="23px";
+    document.getElementById("pagehead").style.width="1050px"; document.getElementById("sectiontitle").style.fontSize="26px";
   document.getElementById("tempcover").style.display="none";
    document.getElementById("sidenav").style.transition=".2s ease-in-out";
    document.getElementById("contentaftersidenav").style.transition=".2s ease-in-out";
