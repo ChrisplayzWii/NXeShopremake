@@ -27,7 +27,7 @@ if(window.nx){
 <body>
 <div id="pagecontainer">
 
- <div id="sidenav" >
+ <div id="sidenav"  tabindex="0" onfocus="opennav();" >
    <a id="sidenavcover" style="display:none;" onclick="opennav();"></a>
 
    <div id="sidenavlinks">
@@ -55,7 +55,7 @@ if(window.nx){
 
  </div><div id="tempcover" style="display:none;"></div>
 
-<div id="contentaftersidenav" onmouseenter="closenav();">
+<div id="contentaftersidenav">
     
   <div id="innerContent">
 
@@ -65,7 +65,7 @@ if(window.nx){
       <a href="#" id="profile"><img id="profileicon" src=""  alt=" "></a>
     </div>
 
-   <div id="titlelist" >
+   <div id="titlelist"  tabindex="0" onfocus="closenav();">
 
     <div id="bigcard1" class="card-big">
       <a href="#" id="bigcardhref1">
