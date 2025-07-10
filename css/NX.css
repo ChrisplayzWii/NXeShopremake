@@ -58,7 +58,7 @@ a{text-decoration:none;}
 #sidenav:focus {
   outline:none; user-select:none; 
 }
-#sidebar * {
+#sidenav * {
  user-select:text; pointer-events:auto;
 }
 #tempcover {

@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
-  document.getElementById("sidenavlinks").focus();
+  opennav();
+  setTimeout(() => {document.getElementById("sidenavlinks").focus();}, 200); 
 
 /* footer */
 
@@ -25,6 +26,7 @@ if (navigator.userAgent.toLowerCase().includes("wifiwebauthapplet")) {
 
 
 function closenav() {
+  document.getElementById("sidenavlinks").blur(); 
   changetitlesize(); document.getElementById("pagehead").style.height="65px";
     document.getElementById("pagehead").style.width="1050px"; document.getElementById("sectiontitle").style.fontSize="28px";
   document.getElementById("tempcover").style.display="none";
@@ -50,7 +52,7 @@ function opennav() {
    document.getElementById("contentaftersidenav").style.marginLeft="410px"; document.getElementById("contentaftersidenav").style.width="870px"; document.getElementById("contentaftersidenav").style.maxWidth="870px";
 document.getElementById("innerContent").style.maxWidth="815px";
     document.getElementById("innerContent").style.paddingLeft="55px"; 
-    setTimeout(showlinksforgoodanim,100); function showlinksforgoodanim() {document.getElementById("sidenavlinks").style.display="block"; document.getElementById("tempcover").style.display="none";}
+    setTimeout(showlinksforgoodanim,100); function showlinksforgoodanim() {document.getElementById("sidenavlinks").style.display="block"; document.getElementById("tempcover").style.display="none"; document.getElementById("sidenavlinks").focus();}
 }
 
 
