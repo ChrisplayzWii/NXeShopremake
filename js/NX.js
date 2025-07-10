@@ -29,9 +29,9 @@ function closenav() {
   document.getElementById("tempcover").style.display="none";
    document.getElementById("sidenav").style.transition=".2s ease-in-out";
    document.getElementById("contentaftersidenav").style.transition=".2s ease-in-out";
-
-    document.getElementById("sidenav").style.width="80px"; document.getElementById("sidenav").style.maxWidth="60px"; document.getElementById("sidenavlinks").style.display="none"; document.getElementById("sidenavcover").style.display="block";
-    document.getElementById("contentaftersidenav").style.marginLeft="60px"; document.getElementById("contentaftersidenav").style.width="1230px"; document.getElementById("contentaftersidenav").style.maxWidth="1035px";
+    document.getElementById("titlelist").style.margin="auto";
+    document.getElementById("sidenav").style.width="85px"; document.getElementById("sidenav").style.maxWidth="85px"; document.getElementById("sidenavlinks").style.display="none"; document.getElementById("sidenavcover").style.display="block";
+    document.getElementById("contentaftersidenav").style.marginLeft="60px"; document.getElementById("contentaftersidenav").style.width="1280px"; document.getElementById("contentaftersidenav").style.maxWidth="1280px";
     document.getElementById("innerContent").style.maxWidth="1175px"; 
 }
 
