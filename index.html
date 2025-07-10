@@ -27,10 +27,10 @@ if(window.nx){
 <body>
 <div id="pagecontainer">
 
- <div id="sidenav">
+ <div id="sidenav" >
    <a id="sidenavcover" style="display:none;" onclick="opennav();"></a>
 
-   <div id="sidenavlinks" tabindex="0" onblur="closenav();">
+   <div id="sidenavlinks">
     <style>
       #navlink1 {
         background-image:url("/NXeShopremake/images/icons/searchicon-remade.svg");
@@ -55,7 +55,7 @@ if(window.nx){
 
  </div><div id="tempcover" style="display:none;"></div>
 
-<div id="contentaftersidenav">
+<div id="contentaftersidenav" onmouseenter="closenav();">
     
   <div id="innerContent">
 
@@ -65,7 +65,7 @@ if(window.nx){
       <a href="#" id="profile"><img id="profileicon" src=""  alt=" "></a>
     </div>
 
-   <div id="titlelist" tabindex="1" >
+   <div id="titlelist" >
 
     <div id="bigcard1" class="card-big">
       <a href="#" id="bigcardhref1">
