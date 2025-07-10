@@ -1,6 +1,9 @@
   #contentaftersidenav  ::-webkit-scrollbar {
     display:none;
   }
+  #titlelist {
+
+  }
 /* bigcard for announcement or catagory */
   .card-big  {
     display:block;

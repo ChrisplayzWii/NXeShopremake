@@ -25,16 +25,18 @@ if (navigator.userAgent.toLowerCase().includes("wifiwebauthapplet")) {
 
 function closenav() {
   changetitlesize();
+    document.getElementById("pagehead").style.width="912px"; document.getElementById("sectiontitle").style.fontSize="23px";
   document.getElementById("tempcover").style.display="none";
    document.getElementById("sidenav").style.transition=".2s ease-in-out";
    document.getElementById("contentaftersidenav").style.transition=".2s ease-in-out";
 
-    document.getElementById("sidenav").style.width="60px"; document.getElementById("sidenav").style.maxWidth="60px"; document.getElementById("sidenavlinks").style.display="none"; document.getElementById("sidenavcover").style.display="block";
-    document.getElementById("contentaftersidenav").style.marginLeft="60px"; document.getElementById("contentaftersidenav").style.width="1280px"; document.getElementById("contentaftersidenav").style.maxWidth="1220px";
-    document.getElementById("innerContent").style.maxWidth="1165px"; 
+    document.getElementById("sidenav").style.width="80px"; document.getElementById("sidenav").style.maxWidth="60px"; document.getElementById("sidenavlinks").style.display="none"; document.getElementById("sidenavcover").style.display="block";
+    document.getElementById("contentaftersidenav").style.marginLeft="60px"; document.getElementById("contentaftersidenav").style.width="1230px"; document.getElementById("contentaftersidenav").style.maxWidth="1035px";
+    document.getElementById("innerContent").style.maxWidth="1175px"; 
 }
 
 function opennav() {
+  document.getElementById("pagehead").style.width="760px"; document.getElementById("sectiontitle").style.fontSize="20px";
   var bgofside = document.getElementById("sidenav").style.backgroundColor;
   document.getElementById("tempcover").style.backgroundColor= bgofside;
   document.getElementById("tempcover").style.display="block";
@@ -43,8 +45,9 @@ function opennav() {
   document.getElementById("contentaftersidenav").style.transition=".5s ease-in-out";
       document.getElementById("sidenavcover").style.display="none";
     document.getElementById("sidenav").style.width="410px"; document.getElementById("sidenav").style.maxWidth="410px";
-    document.getElementById("contentaftersidenav").style.marginLeft="410px"; document.getElementById("contentaftersidenav").style.width="870px"; document.getElementById("contentaftersidenav").style.maxWidth="870px";
-    document.getElementById("innerContent").style.maxWidth="815px";
+   document.getElementById("contentaftersidenav").style.marginLeft="410px"; document.getElementById("contentaftersidenav").style.width="870px"; document.getElementById("contentaftersidenav").style.maxWidth="870px";
+document.getElementById("innerContent").style.maxWidth="815px";
+    document.getElementById("innerContent").style.paddingLeft="55px"; 
     setTimeout(showlinksforgoodanim,100); function showlinksforgoodanim() {document.getElementById("sidenavlinks").style.display="block"; document.getElementById("tempcover").style.display="none";}
 }
 
@@ -63,7 +66,7 @@ function changetitlesizeback() {
 const titlelist = document.getElementById('titlelist');
 
 if (titlelist) {
-  titlelist.style.transformOrigin = 'top left';
+  titlelist.style.transformOrigin = 'top';
   titlelist.style.transform = 'scale(1)';
 }
 
