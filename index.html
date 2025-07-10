@@ -27,10 +27,10 @@ if(window.nx){
 <body>
 <div id="pagecontainer">
 
- <div id="sidenav"  tabindex="0" onfocus="opennav();" >
+ <div id="sidenav"  >
    <a id="sidenavcover" style="display:none;" onclick="opennav();"></a>
 
-   <div id="sidenavlinks">
+   <div id="sidenavlinks" tabindex="0" onfocus="opennav();">
     <style>
       #navlink1 {
         background-image:url("/NXeShopremake/images/icons/searchicon-remade.svg");
@@ -42,7 +42,6 @@ if(window.nx){
         position:relative;  left:40px;
       }
     </style>
-    <div id="addspace" onclick="window.location.reload();"  style="display:block;height:43px; min-height:43px; width: inherit;"></div>
     <div class="navlink"><a href="#" onmousedown="closenav();" id="navlink1"><p id="searchnavtxt">Search/Browse</p></a></div>
     <div class="navlink"><a href="#" onmousedown="closenav();" id="navlink2">Featured</a></div>
     <div class="navlink"><a href="#" onmousedown="closenav();" id="navlink3">Recent Releases</a></div>
@@ -50,7 +49,7 @@ if(window.nx){
     <div class="navlink"><a href="#" onmousedown="closenav();" id="navlink5">Best Sellers</a></div>
     <div class="navlink"><a href="#" onmousedown="closenav();" id="navlink6">Coming Soon</a></div>
     <div class="navlink"><a href="#" onmousedown="closenav();" id="navlink7">Nintendo Switch Online</a></div>
-    <div class="navlink"><a href="#" onmousedown="closenav();" id="navlink8">Enter Code</a></div>
+    <div class="navlink"><a href="javascript:window.location.reload();" onmousedown="closenav();" id="navlink8">Enter Code</a></div>
    </div>
 
  </div><div id="tempcover" style="display:none;"></div>

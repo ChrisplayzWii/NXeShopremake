@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   document.getElementById("sidenavlinks").focus();
-  
+
 /* footer */
 
  /* https://stackoverflow.com/a/37020542 */
