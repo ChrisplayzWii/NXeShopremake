@@ -25,14 +25,14 @@ if (navigator.userAgent.toLowerCase().includes("wifiwebauthapplet")) {
 
 function closenav() {
   changetitlesize();
-    document.getElementById("pagehead").style.width="912px"; document.getElementById("sectiontitle").style.fontSize="23px";
+    document.getElementById("pagehead").style.width="1050px"; document.getElementById("sectiontitle").style.fontSize="23px";
   document.getElementById("tempcover").style.display="none";
    document.getElementById("sidenav").style.transition=".2s ease-in-out";
    document.getElementById("contentaftersidenav").style.transition=".2s ease-in-out";
     document.getElementById("titlelist").style.margin="auto";
     document.getElementById("sidenav").style.width="85px"; document.getElementById("sidenav").style.maxWidth="85px"; document.getElementById("sidenavlinks").style.display="none"; document.getElementById("sidenavcover").style.display="block";
     document.getElementById("contentaftersidenav").style.marginLeft="60px"; document.getElementById("contentaftersidenav").style.width="1280px"; document.getElementById("contentaftersidenav").style.maxWidth="1280px";
-    document.getElementById("innerContent").style.maxWidth="1175px"; 
+    document.getElementById("innerContent").style.maxWidth="1175px";  ocument.getElementById("innerContent").style.paddingLeft="195px"; 
 }
 
 function opennav() {
@@ -57,7 +57,7 @@ const titlelist = document.getElementById('titlelist');
 
 if (titlelist) {
   titlelist.style.transformOrigin = 'top left';
-  titlelist.style.transform = 'scale(1.2)';
+  titlelist.style.transform = 'scale(1.4)';
 }
 
 }
