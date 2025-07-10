@@ -27,104 +27,115 @@ if(window.nx){
 <div id="pagecontainer">
 
  <div id="sidenav">
-   <div id="sidenavcover" style="display:none;"></div>
+   <a id="sidenavcover" style="display:none;" onclick="opennav();"></a>
 
    <div id="sidenavlinks">
-    <div id="addspace" onclick="window.location.reload();"  style="display:block;height:28px; min-height:28px; width: inherit;"></div>
-
-    <div class="navlink"><a href="#">Featured</a></div>
+    <div id="addspace" onclick="window.location.reload();"  style="display:block;height:43px; min-height:43px; width: inherit;"></div>
+    <div class="navlink"><a href="#" onmousedown="closenav();" id="navlink1">Search/Browse</a></div>
+    <div class="navlink"><a href="#" onmousedown="closenav();" id="navlink2">Featured</a></div>
+    <div class="navlink"><a href="#" onmousedown="closenav();" id="navlink3">Recent Releases</a></div>
+    <div class="navlink"><a href="#" onmousedown="closenav();" id="navlink4">Great Deals</a></div>
+    <div class="navlink"><a href="#" onmousedown="closenav();" id="navlink5">Best Sellers</a></div>
+    <div class="navlink"><a href="#" onmousedown="closenav();" id="navlink6">Coming Soon</a></div>
+    <div class="navlink"><a href="#" onmousedown="closenav();" id="navlink7">Nintendo Switch Online</a></div>
+    <div class="navlink"><a href="#" onmousedown="closenav();" id="navlink8">Enter Code</a></div>
    </div>
 
- </div>
+ </div><div id="tempcover" style="display:none;"></div>
 
- <div id="contentaftersidenav">
+<div id="contentaftersidenav">
     
-  <div id="innerContent">
+  <div id="innerContent" onfocus="closenav();">
+
     <div id="pagehead">
       <div id="sectiontitle">Featured</div>
 
       <a href="#" id="profile"><img id="profileicon" src=""  alt=" "></a>
     </div>
+
+     <div id="titlelist">
+<style>
+  #contentaftersidenav  ::-webkit-scrollbar {
+    display:none;
+  }
+/* bigcard for announcement or catagory */
+  .card-big  {
+    display:block;
+    border:1px solid #34BEED;
+    height: 224px; max-height:224px;
+    width:750px; max-width:750px;
+    margin-top:3px;margin-bottom:3px;
+  }
+  .card-big img {
+    display:block;
+    min-width:inherit; width:100%;
+    min-height:195px; max-height:195px;
+    background-color:#d6d6d6; border:none;
+  }
+  .cardinfo {
+  position:relative; left:0px; background-color:#FFF;
+  font-size: 15px; font-weight:normal;
+  padding-left:10px;
+  height:25px; max-height:25px; overflow:hidden;
+  color:#616161;
+  text-overflow:ellipsis;white-space:nowrap;
+  }
+  .cardinfo:hover {overflow:auto hidden;text-overflow:unset; white-space:nowrap;}.cardinfo:hover::-webkit-scrollbar {display:block !important;height:6px;}
+  .cardinfo:focus {overflow:auto hidden;text-overflow:unset; white-space:nowrap;}.cardinfo:focus::-webkit-scrollbar {display:block !important;height:6px;}
+/* bigcard for announcement or catagory */
+
+/* featuredcard */
+  .card-featured-normal  {
+    display:inline-block;
+    border:1px solid #34BEED;
+    height: 228px; max-height:228px;
+    width:375px; max-width:375px;
+    margin-top:3px;margin-bottom:3px;
+  }
+  .card-featured-normal img {
+    display:block;
+    min-width:inherit; width:100%;
+    min-height:200px; max-height:200px;
+    background-color:#d6d6d6; border:none;
+  }
+
+/* featuredcard */
+</style>
+
+    <div id="bigcard1" class="card-big">
+      <a href="#" id="bigcardhref1">
+       <img id="bigcardimg1" class="cardimg" src="" alt=" ">
+       <div id="bigcardinfo1" class="cardinfo">The Summer Sale is drifting by! Save on a cool selection of Nintendo Switch&trade; games. Now through 7/9 at 11:59 p.m PT</div>
+      </a>
+    </div>
+
+    <div id="bigcard2" class="card-big">
+      <a href="#" id="bigcardhref2">
+       <img id="bigcardimg2" class="cardimg" src="" alt=" ">
+       <div id="bigcardinfo2" class="cardinfo">Explore video games you won't want to miss for the Nintendo Switch&trade; System.</div>
+      </a>
+    </div>
+
+    <div id="smallcard1" class="card-featured-normal">
+      <a href="#" id="smallcardhref1">
+       <img id="smallcardimg1" class="cardimg"  src="/NXeShopremake/titles/US/nintendo.com-store-/d33ed7f51de601b10cafa5814fd786bbad317b0421a43d54917a2c647be2f23b.avif" alt=" ">
+       <div id="smallcardinfo1" class="cardinfo">Xenoblade Chronicles&trade; X: Definitive Edition</div>
+      </a>
+    </div>
+
+    <div id="smallcard2" class="card-featured-normal">
+      <a href="#" id="smallcardhref2">
+       <img id="smallcardimg2" class="cardimg"  src="/NXeShopremake/titles/US/nintendo.com-store-/ba0572bf9d840b03bf9958809943fb3c76c3adfd6d8f2704b0f1b766f8aa4027.avif" alt=" ">
+       <div id="smallcardinfo2" class="cardinfo">Super Mario Party&trade; Jamboree</div>
+      </a>
+    </div>
+
+     </div>
     
-    <p>ok</p>
-<p>ok</p>
-<p>ok</p>
-<p>ok</p>
-<p>ok</p>
-<p>ok</p>
-<p>ok</p>
-<p>ok</p>
-<p>ok</p>
-<p>ok</p>
-<p>ok</p>
-<p>ok</p>
-<p>ok</p>
-<p>ok</p>
-<p>ok</p>
-<p>ok</p>
-<p>ok</p>
-<p>ok</p><p>ok</p>
-<p>ok</p>
-<p>ok</p>
-<p>ok</p>
-<p>ok</p>
-<p>ok</p>
-<p>ok</p>
-<p>ok</p>
-<p>ok</p>
-<p>ok</p>
-<p>ok</p>
-<p>ok</p>
-<p>ok</p>
-<p>ok</p>
-<p>ok</p>
 
-<p>ok</p>
-<p>ok</p>
-<p>ok</p>
-<p>ok</p>
-<p>ok</p>
-<p>ok</p>
-<p>ok</p>
-<p>ok</p>
-<p>ok</p>
-<p>ok</p>
-<p>ok</p>
-<p>ok</p>
-<p>ok</p>
-<p>ok</p>
-<p>ok</p>
-<p>ok</p>
-<p>ok</p>
-<p>ok</p>
-<p>ok</p>
-<p>ok</p>
-<p>ok</p>
-<p>ok</p>
-<p>ok</p>
-<p>ok</p>
-<p>ok</p>
-<p>ok</p>
-<p>ok</p>
-<p>ok</p>
-<p>ok</p>
-<p>ok</p>
-<p>ok</p>
-<p>ok</p>
-<p>ok</p>
-<p>ok</p>
-<p>ok</p>
-<p>ok</p>
-<p>ok</p>
-<p>ok</p>
-<p>ok</p>
-<p>ok</p>
-<p>ok</p>
-<p>ok</p>
+  </input>
 
-  </div>
-
- </div>
+</div>
 
 
 </div>
