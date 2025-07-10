@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
-
+  document.getElementById("sidenav").focus();
+  
 /* footer */
 
  /* https://stackoverflow.com/a/37020542 */
@@ -32,7 +33,7 @@ function closenav() {
     document.getElementById("titlelist").style.margin="auto";
     document.getElementById("sidenav").style.width="85px"; document.getElementById("sidenav").style.maxWidth="85px"; document.getElementById("sidenavlinks").style.display="none"; document.getElementById("sidenavcover").style.display="block";
     document.getElementById("contentaftersidenav").style.marginLeft="60px"; document.getElementById("contentaftersidenav").style.width="1280px"; document.getElementById("contentaftersidenav").style.maxWidth="1280px";
-    document.getElementById("innerContent").style.maxWidth="1175px";  ocument.getElementById("innerContent").style.paddingLeft="195px"; 
+    document.getElementById("innerContent").style.maxWidth="1175px"; 
 }
 
 function opennav() {

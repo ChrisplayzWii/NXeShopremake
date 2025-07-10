@@ -53,7 +53,7 @@ a{text-decoration:none;}
     width:410px; max-width:410px;
     min-height:719px; /* min-height:720px; */
     overflow: hidden auto;
-    user-select:none; pointer-events:none;
+    user-select:none;
 }
 #sidenav:focus {
   outline:none; user-select:none; 
