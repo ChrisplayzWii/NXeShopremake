@@ -1,13 +1,15 @@
   #contentaftersidenav  ::-webkit-scrollbar {
     display:none;
   }
-  #titlelist {
-
-  }
+#titlelist:focus {
+  outline:none; user-select:none; 
+}
+#titlelist * {
+  user-select:text;
+}
 /* bigcard for announcement or catagory */
   .card-big  {
     display:block;
-    border:1px solid #34BEED;
     height: 224px; max-height:224px;
     width:750px; max-width:750px;
     margin-top:3px;margin-bottom:3px;

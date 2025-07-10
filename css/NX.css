@@ -54,6 +54,7 @@ a{text-decoration:none;}
     min-height:719px; /* min-height:720px; */
     overflow: hidden auto;
     user-select:none; pointer-events:none;
+    outline: none;
 }
 #tempcover {
   /* so animation doesnt look weird on sidenav return */
